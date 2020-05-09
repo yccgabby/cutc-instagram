@@ -1,4 +1,4 @@
 {
     "python.pythonPath": "/Users/yccgabby/.virtualenvs/instagram/bin/python3.7",
-    "python.envFile": "/Users/yccgabby/Projects/cutc-instagram/.env"
+    "python.jediEnabled": false
 }

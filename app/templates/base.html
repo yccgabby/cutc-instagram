@@ -1,0 +1,14 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - Instagram Bot</title>
+      {% else %}
+      <title>Instagram Bot</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>Instagram Bot: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Hello, {{ user.username }}!</h1>
+    {% for notif in notifs %}
+    <div>
+        <p>
+            {{ notif.username }} {{ notif.message }}
+        </p>
+    </div>
+    {% endfor %}
+{% endblock %}
