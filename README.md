@@ -1,4 +1,4 @@
-# cutc-instagram
+# Flask App using the InstaPy library
 
 This project is a social media analytic service, born out of a need to monitor CUTC's Instagram (CUTC stands for the Canadian Undergraduate Tech Conference, learn more here: https://www.cutc.ca)
 
