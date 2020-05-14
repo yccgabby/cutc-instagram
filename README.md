@@ -7,6 +7,6 @@ It's a Flask (Python backend) web app with three pages - a homepage, a login scr
 Due to Instagram's tighter restrictions over automated services, this tool is only for demonstrative purposes and should be tested carefully. User is responsible for moderating actions to avoid being banned from the platform. 
 
 Notes: 
-- Make sure you are running Python 3.6+ 
+- Make sure you are running Python 3.7+ 
 - When you open this project, go to the terminal and run 'pip install -r requirements.txt' to download all required modules
 - To run this project, go to the terminal and run 'flask run'
