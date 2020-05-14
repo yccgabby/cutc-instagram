@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Profile Data</h1>
+    <h2>Followers</h2>
+    <p>{{ profile.followers }}</p>
+    <h2>Following</h2>
+    <p>{{ profile.following }}</p>
+    <h2>Unfollowers</h2>
+    <p>{{ profile.unfollowers }}</p>
+    <h2>Fans</h2>
+    <p>{{ profile.fans }}</p>
+    <h2>Accounts not following back</h2>
+    <p>{{ profile.not_following_back }}</p>
+{% endblock %}
