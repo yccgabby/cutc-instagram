@@ -1,6 +1,9 @@
 from app import bot
 from flask import render_template, flash, redirect, url_for
+from instapy import InstaPy, smart_run
 from app.forms import LoginForm
+from app.data import Profile
+import os
 
 @bot.route('/')
 @bot.route('/index')
@@ -25,3 +28,11 @@ def login():
             form.username.data, form.remember_me.data))
         return redirect(url_for('index'))
     return render_template('login.html', title='Sign In', form=form)
+@bot.route('/data')
+def data():
+    f = open('./data/profile.txt', 'r')
+    if os.path.getsize('./data/profile.txt') > 0:
+        profile = Profile()
+        return render_template('data.html',profile=profile)
+    else:
+        return render_template('nodata.html')
