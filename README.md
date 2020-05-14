@@ -1,15 +1,12 @@
 # cutc-instagram
 
-This project started as a social media outreach automation tool for CUTC's Instagram (https://www.cutc.ca)
+This project is a social media analytic service, born out of a need to monitor CUTC's Instagram (CUTC stands for the Canadian Undergraduate Tech Conference, learn more here: https://www.cutc.ca)
 
-Its scope has since expanded to supporting Instagram influencers who want to use automation software to grow their audience but have greater control over their account's actions
+It's a Flask (Python backend) web app with three pages - a homepage, a login screen, and a profile page that displays analytics about the logged-in user. These analytics include a list of followers and followed accounts, fans of the user, accounts who recently unfollowed, and accounts that don't follow back the user. 
 
 Due to Instagram's tighter restrictions over automated services, this tool is only for demonstrative purposes and should be tested carefully. User is responsible for moderating actions to avoid being banned from the platform. 
 
-Tech stack (so far): Flask (Python), HTML
-
-Progress: 
-
-April 28th 2020 - use Selenium to automate Instagram browser experience, encounter difficulty in isolating HTML elements
-May 8th 2020 - switch from hard-coded Python to InstaPy, an open-source library, to simplify functions
-May 9th 2020 - wrap Python code in Flask back-end
+Notes: 
+- Make sure you are running Python 3.6+ 
+- When you open this project, go to the terminal and run 'pip install -r requirements.txt' to download all required modules
+- To run this project, go to the terminal and run 'flask run'
