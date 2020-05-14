@@ -10,12 +10,14 @@ class LoginForm(FlaskForm):
     remember_me = BooleanField('Remember Me')
     submit = SubmitField('Sign In')
     
-    print(str(password))
     def validate_password(self, field):
         try:
-            print(self.username.data, self.password.data)
             session = InstaPy(username=str(self.username.data),password=str(self.password.data),headless_browser=True)
             sleep(3)
+            with open('./data/profile.txt', 'w+') as f:
+                f.write(self.username.data)
+                f.write('\n')
+                f.write(self.password.data)
             return True
         except:
             raise ValidationError('Instagram account does not exist')
